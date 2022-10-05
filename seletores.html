@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Seletores</title>
+
+		<style type="text/css">
+			
+			/*SELETOR GERAL*/
+			/** {
+				border: 1px solid red;
+			}*/
+
+			/*SELETOR DE TEXTO*/
+			h1 {
+				color: green;
+			}
+
+			/*SELETOR DE CLASSE*/
+			.subtitulos {
+				text-decoration: line-through;
+			}
+
+			/*SELETOR DE ID*/
+			#cabecalho {
+				background: #c4c4c4;
+			}
+
+			/*SELETOR DE FILHO DIRETO*/
+			div>h2 {
+				color: blue;
+			}
+
+			/*SELETOR DE DESCENDENTE*/
+			#cabecalho a {
+				color: red;
+				text-decoration: none;
+			}
+			span a {
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+
+			/*SELETOR DE IRMAO ADJACENTE*/
+			h3+p {
+				color: purple;
+				font-weight: bold;
+			}
+
+			/*SELETOR DE IRMAO GERAL*/
+			h3~span {
+				color: purple;
+				font-weight: bold;
+			}
+
+		</style>
+	</head>
+	
+	<body>
+
+		<div id="cabecalho">
+			<h1>Titulo 1</h1>
+			<span>
+				<a href="">HOME</a>
+				<a href="">SOBRE</a>
+			</span>
+			<p class="subtitulos">Paragrafo de teste</p>
+		</div>
+
+		<div>
+			<h2>Titulo 2</h2>
+			<span>
+				<p>
+					<a href="">LINK DE EXEMPLO 2</a>
+					<a href="">LINK DE EXEMPLO 3</a>
+				</p>
+			</span>
+		</div>
+
+		<hr>
+
+		<div>
+			<h3>Titulo 3</h3>
+			<p>OLA TUDO BEM</p>
+			<p>OLA TUDO BEM</p>
+			<p>OLA TUDO BEM</p>
+		</div>
+
+		<hr>
+
+		<div>
+			<h3>Titulo 4</h3>
+			<span>OLA TUDO BEM</span> <br>
+			<span>OLA TUDO BEM</span> <br>
+			<span>OLA TUDO BEM</span> <br>
+		</div>
+
+	</body>
+</html>

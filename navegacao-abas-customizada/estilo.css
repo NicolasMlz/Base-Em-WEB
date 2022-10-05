@@ -1,0 +1,50 @@
+ul {
+
+	/*CONTAINER*/
+	margin: 0px;
+	padding: 0px;
+
+	/*COMPORTAMENTO*/
+	list-style-type: none;
+}
+
+ul li {
+
+	/*CONTAINER*/
+	background: url(../imagens/aba-direita2.png) no-repeat top right;
+
+	/*COMPORTAMENTO*/
+	float: left;
+
+}
+
+ul a {
+
+	/*TEXTO*/
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+
+	/*CONTAINER*/
+	background: url(../imagens/aba-esquerda2.png) no-repeat top left;
+	padding: 0 2em;
+	line-height: 3em;
+
+	/*COMPORTAMENTO*/
+	float: left;
+}
+
+ul a:hover {
+
+	/*TEXTO*/
+	color: #894a1f;	
+}
+
+ul .menu-selecionado {
+	background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul .menu-selecionado a {
+	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+	color: white;
+}

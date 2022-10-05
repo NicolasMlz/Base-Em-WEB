@@ -1,0 +1,40 @@
+ul {
+
+	/*CONTAINER*/
+	width: 920px;
+	height: 40px;
+	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+	margin: 0px;
+	padding: 0px;
+
+	/*COMPORTAMENTO*/
+	list-style-type: none;
+	float: left;
+}
+
+ul a {
+
+	/*TEXTO*/
+	text-decoration: none;
+	color: white;
+	float: left;
+	font-weight: bold;
+
+	/*CONTAINER*/
+	padding: 0px 2em;
+	line-height: 2em;
+	background: url(../imagens/divisor.png) repeat-y;
+}
+
+ul a:hover, .menu-selecionado a {
+	color: #085662;
+	background: #44cade;
+}
+
+ul a:active {
+	color: white;
+}
+
+.primeiro a {
+	background: none;
+}
