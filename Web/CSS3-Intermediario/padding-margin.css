@@ -1,0 +1,25 @@
+#conteudo {
+
+	/*cor*/
+	background-color: gray;
+
+	/*espacamento*/
+	padding: 20px;
+
+	/*tamanho*/
+	width: 700px;
+}
+
+h2 {
+
+	/*espacamento*/
+	margin: 0px;
+	padding: 10px 20px;
+
+	/*bordas*/
+	border: 1px solid red;
+}
+
+p {
+	margin: 10px 10px 0px 10px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Posicionamentos (static, relative, absolute e fixed)</title>
+		<style type="text/css">
+			
+			body {
+				background: deepskyblue;
+			}
+
+			#conteudo {
+				background: white;
+				padding: 15px;
+
+				/*CENTRALIZAR*/
+				width: 1200px;
+				margin: 40px auto;
+				position: relative;
+			}
+
+			p {
+				width: 400px;
+			}
+
+			.relative {
+				border: 1px solid red;
+
+				/*POSICAO RELATIVA É BASEADA NA POSICAO DO MESMO ELEMENTO
+				MAS QUANDO ERA ESTATICO (MARCO INICIAL É O ELEMENTO)*/
+				position: relative;
+				left: 400px;
+				bottom: 100px;
+			}
+
+			.absolute {
+				border: 1px solid red;
+
+				/*POSICAO ABSOLUTA É BASEADA NA POSICAO DO ELEMENTO EM RELACAO
+				AO CONTAINER QUE O ENVOLVE E QUE NAO É ESTATICO E MUDA CONFORME
+				A MANIPULAÇÃO DO TAMANHO DO CONTAINER*/
+				position: absolute;
+				top: 30px;
+				right: 30px;
+			}
+
+			.fixed {
+				border: 1px solid red;
+				background: white;
+
+				/*POSIÇÃO FIXA É BASEADA NA PÁGINA E NÃO MUDA INDEPENDENTE DA 
+				ROLAGEM, GERALMENTE É UTILIZADA EM CHATS, COOKIES E ETC*/
+				position: fixed;
+				bottom: 15px;
+				left: 15px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div id="conteudo">
+			
+			<h1>Posicionamentos</h1>
+
+			<p>
+				<strong>POSICAO ESTATICA</strong> <br>
+				P1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p class="relative">
+				<strong>POSICAO RELATIVA</strong> <br>
+				P2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+				<strong>POSICAO ESTATICA</strong> <br>
+				P3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p class="absolute">
+				<strong>POSICAO ABSOLUTA</strong> <br>
+				P4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+
+			<p class="fixed">
+				<strong>POSICAO FIXA</strong> <br>
+				P5 ESSE SITE UTILIZA DE COOKIES PARA CAPTAR SUAS INFORMAÇÕES, VOCÊ
+				ACEITA?
+			</p>
+
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sobreposicao de elementos</title>
+		
+		<style type="text/css">
+			
+			#conteudo1 {
+				border: 1px solid red;
+				width: 200px;
+				height: 200px;
+				background: orange;
+				position: relative;
+
+				/*PRIORIDADE DE APARICAO NA TELA*/
+				z-index: 2;
+			}
+
+			#conteudo2 {
+				border: 1px solid red;
+				width: 200px;
+				height: 200px;
+				background: green;
+				position: relative;
+				bottom: 80px;
+				left: 80px;
+
+				/*PRIORIDADE DE APARICAO NA TELA*/
+				z-index: 1;
+			}
+
+			#conteudo3 {
+				border: 1px solid red;
+				width: 200px;
+				height: 200px;
+				background: yellow;
+				position: relative;
+				bottom: 160px;
+				left: 160px;
+
+				/*PRIORIDADE DE APARICAO NA TELA*/
+				z-index: 0;
+			}
+
+			.texto {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div id="conteudo1">
+			<div class="texto">CONTEUDO 1</div>
+		</div>
+
+		<div id="conteudo2">
+			<div class="texto">CONTEUDO 2</div>
+		</div>
+
+		<div id="conteudo3">
+			<div class="texto">CONTEUDO 3</div>
+		</div>
+
+	</body>
+</html>
