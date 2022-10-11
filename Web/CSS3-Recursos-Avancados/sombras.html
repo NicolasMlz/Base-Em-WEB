@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Border Radius e Box Sizing</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <!-- Estilo Customizado -->
+    <style type="text/css">
+      
+      #caixa1 {
+        width: 450px; 
+        height: 300px; 
+        margin: 50px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        background-color: deepskyblue;
+
+        /*Os 2 primeiros parâmetros se referem ao posicionamento
+        da sombra; o 3° parâmetro é o borrão da sombra; e o 4°
+        parâmetro é a cor da sombra (normalmente usa-se rgba 
+        de cor preta para definir a opacidade também).*/   
+        box-shadow: -20px 20px 5px rgba(0, 0, 0, 0.6);
+      }
+
+      #caixa1 h1 {
+        color: white;
+        
+        /*Os 2 primeiros parâmetros se referem ao posicionamento
+        da sombra; o 3° parâmetro é o borrão da sombra; e o 4°
+        parâmetro é a cor da sombra (normalmente usa-se rgba 
+        de cor preta para definir a opacidade também).*/ 
+        text-shadow: -20px 20px 5px rgba(0, 0, 0, 0.6);
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Exemplo -->
+    <div id="caixa1">
+      <h1>Sombra no Texto e na Caixa</h1> <br>
+      <p>Os 2 primeiros parâmetros se referem ao posicionamento
+        da sombra; o 3° parâmetro é o borrão da sombra; e o 4°
+        parâmetro é a cor da sombra (normalmente usa-se rgba 
+        de cor preta para definir a opacidade também).
+      </p>
+    </div>
+
+  </body>
+</html>

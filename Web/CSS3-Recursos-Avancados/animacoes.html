@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Border Radius e Box Sizing</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <!-- Estilo Customizado -->
+    <style type="text/css">
+      
+      /*Deve-se colocar os prefixos de browsers tbm*/
+      @keyframes animacao-caixa {
+        from {
+          background-color: deepskyblue;
+          border-radius: 0px;
+          box-shadow: -30px 30px 5px rgba(0, 0, 0, 0.8);
+        }
+        to {
+          background-color: darkred;
+          border-radius: 200px;
+          top: 150px;
+          left: 150px;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+      }
+
+      #caixa1 {
+
+        /*Configurações gerais*/
+        width: 400px; 
+        height: 400px; 
+        margin: 50px;
+        padding: 50px;
+        padding-top: 30px;
+        box-sizing: border-box;
+        background-color: deepskyblue;
+        box-shadow: -30px 30px 5px rgba(0, 0, 0, 0.8);
+        
+        /*controlar movimento da caixa*/
+        position: relative; 
+        top: 50px; left: 50px;
+
+        /*Deve-se colocar os prefixos de browsers tbm*/
+        animation: animacao-caixa 3s 1s 6 alternate;
+        /*O 1° parâmetro é o nome;O 2° parâmetro é a duração da 
+        animação; O 3° parâmetro é o delay para a animação começar;
+        O 4° parâmetro é quantas vezes a animação vai se repetir; 
+        O 5° parâmetro é o que acontecerá com a animação se ela
+        acabar (se vai alternar, parar ou começar do começo).*/
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Exemplo -->
+    <div id="caixa1">
+      <h1>Exemplo de Animação</h1> 
+      <p>
+        O 1° parâmetro é o nome; <br>
+        O 2° parâmetro é a duração da 
+        animação; <br>
+        O 3° parâmetro é o delay para a animação começar; <br>
+        O 4° parâmetro é quantas vezes a animação vai se repetir; <br>
+        O 5° parâmetro é o que acontecerá com a animação se ela
+        acabar (se vai alternar, parar ou começar do começo).
+      </p>
+    </div>
+
+  </body>
+</html>

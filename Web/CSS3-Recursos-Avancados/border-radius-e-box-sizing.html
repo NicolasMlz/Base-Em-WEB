@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Border Radius e Box Sizing</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <!-- Estilo Customizado -->
+    <style type="text/css">
+      
+      #caixa1 {
+        background-color: darkred;
+        color: white;
+        width: 300px; 
+        height: 300px;
+        text-align: center;
+
+        border-radius: 20px 50px 80px 150px;
+        /*PREFIXOS UTILIZADOS PARA SEREM PROCESSADOS 
+        POR VERSÕES MAIS VELHAS DOS BROWSERS*/
+        -moz-border-radius: 20px 50px 80px 150px;
+        -webkit-border-radius: 20px 50px 80px 150px;
+      }
+
+      #caixa2 {
+        background-color: deepskyblue;
+        color: white;
+        width: 300px; 
+        height: 300px;
+        padding: 50px;
+        text-align: center;
+      }
+
+      #caixa3 {
+        background-color: darkgoldenrod;
+        color: white;
+        width: 300px; 
+        height: 300px;
+        padding: 50px;
+        text-align: center;
+
+        box-sizing: border-box;
+        /*PREFIXOS UTILIZADOS PARA SEREM PROCESSADOS 
+        POR VERSÕES MAIS VELHAS DOS BROWSERS*/
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Exemplo -->
+    <div id="caixa1">
+      <h1>Border Radius Exemplo</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+    </div>
+
+    <br>
+
+    <h2>Em ambos os casos a seguir o padding é de 50px</h2>
+
+    <div id="caixa2">
+      <h1>SEM Box Sizing Exemplo</h1>
+      <p>Dependendo do padding que se colocar, a largura e altura da caixa aumentam,
+      e portanto o padding deve ser considerado nos cálculos dos tamanhos do componentes.</p>
+    </div>
+
+    <div id="caixa3">
+      <h1>COM Box Sizing Exemplo</h1>
+      <p>Com o box sizing, o padding é desconsiderado e as dimensões da caixa se mantém.</p>
+    </div>
+
+  </body>
+</html>
