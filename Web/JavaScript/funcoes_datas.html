@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script>
+			
+			//Instanciar data
+			var data = new Date();
+
+			// //Recuperar data
+			// document.write(data.getDate() + "/");
+
+			// //Recuperar mês
+			// document.write((data.getMonth() + 1) + "/");
+
+			// //Recupear Ano
+			// document.write((data.getFullYear()));
+
+			// //Adicionar / Remover DIAS
+			// document.write(data.toString());
+			// data.setDate(data.getDate() + 1);
+			// document.write('<br/>');
+			// document.write(data.toString());
+			// document.write('<hr/>');
+
+			// //Adicionar / Remover MESES
+			// document.write(data.toString());
+			// data.setMonth(data.getMonth() + 1);
+			// document.write('<br/>');
+			// document.write(data.toString());
+			// document.write('<hr/>');
+
+			// //Adicionar / Remover ANOS
+			// document.write(data.toString());
+			// data.setFullYear(data.getFullYear() + 1);
+			// document.write('<br/>');
+			// document.write(data.toString());
+			// document.write('<hr/>');
+
+			//Diferença entre datas
+			var data1 = new Date(2022, 9, 19);
+			var data2 = new Date(2022, 11, 31);
+			var milissegundosEntreDatas = Math.abs(data1.getTime() - data2.getTime());
+			var milissegundosPorDia = 1*24*60*60*1000;
+
+				//Converter datas para algo calculavel (TRANSFORMAR EM MILISSEGUNDOS)
+				document.write(data1.getTime());
+				document.write('<hr/>');
+				document.write(data2.getTime());
+				document.write('<hr/>');
+
+				//Encontrar a quantidade de milissegundos entre as 2 datas
+				document.write('A diferença em milissegundos entre as datas é de: ' +  milissegundosEntreDatas + ' milissegundos.');
+				document.write('<hr/>');
+
+				//Calcular quantos milissegundos tem em 1 dia
+				document.write('1 Dia tem: ' + (milissegundosPorDia) + ' milissegundos.');
+				document.write('<hr/>');
+
+				//Transformar os milissegundos de diferença em dias
+				document.write('A diferença entre as datas é de: ' +  Math.ceil(milissegundosEntreDatas/milissegundosPorDia) + ' dias.');
+			
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+</html>

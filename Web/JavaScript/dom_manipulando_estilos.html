@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<style type="">
+			
+			body {
+				padding: 50px 80px;
+			}
+
+			button {
+				width: 75px;
+				margin: 15px;
+				margin-left: 0;
+			}
+
+			div {
+				text-align: center;
+				width: 260px;
+				height: 260px;
+				background-color: #ccc;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<h1>Manipulando estilos</h1>
+
+		<button id="vermelhor" onmouseover ="mudarEstilo('red')">Vermelho</button>
+		<button id="verde" onmouseover ="mudarEstilo('green')">Verde</button>
+		<button id="azul" onmouseover ="mudarEstilo('blue')">Azul</button>
+
+		<div id="caixa">
+			<h3>Caixa de Teste</h3>
+		</div>
+
+
+
+		<script>
+			function mudarEstilo(cor) {
+				document.getElementById('caixa').style.background = cor;
+			}
+		</script>
+	</body>
+</html>

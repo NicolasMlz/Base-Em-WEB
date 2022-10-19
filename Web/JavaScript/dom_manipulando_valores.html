@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+	</head>
+
+	<body>
+
+		<div>
+			<input 
+				type="text" 
+				id="campo-caracter" 
+				placeholder="Digite um caracter aqui..." 
+				onkeyup="letraOuNumero()"
+			>
+		</div>
+		<br>
+
+		<span>
+			Letras: 
+			<input type="text" id="campo-letra">
+		</span>
+
+		<span>
+			Números: 
+			<input type="text" id="campo-numero">
+		</span>
+
+		<script>
+
+			//Funções
+			function letraOuNumero() {
+
+				// Acessar valor que o usuário digitou
+				caracter = document.getElementById('campo-caracter').value;
+				console.log(caracter);
+
+				// Zerar o campo para os próximos casos
+				document.getElementById('campo-caracter').value = '';
+
+				// Retirar espaços em branco
+				caracter.trim();
+
+				// Settar campo conforme a natureza do caracter
+				if(caracter >= '0' && caracter <= '9') {
+					document.getElementById('campo-numero').value += caracter;
+				} else {
+					document.getElementById('campo-letra').value += caracter;
+				}
+			}
+
+		</script>
+	</body>
+</html>

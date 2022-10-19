@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<style type="">
+			
+			body {
+				padding: 50px 80px;
+			}
+
+			.estilo1 {
+				width: 100px;
+				height: 40px;
+			}
+
+			.estilo2 {
+				text-align: center;
+				width: 260px;
+				height: 260px;
+				background-color: blue;
+				color: white;
+				border-radius: 3000px;
+				font-size: 2em;
+
+
+				transition: width 2s, height 2s, background-color 1s, border-radius 2s, font-size 2s;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<h1>Manipulando classes</h1>
+		<hr>
+		<button id="caixa" class="estilo1" onclick="mudarClasse()">Ver Mágica Agora</button>
+
+
+		<script>
+			function mudarClasse() {
+				document.getElementById('caixa').className = 'estilo2';
+			}
+		</script>
+	</body>
+</html>

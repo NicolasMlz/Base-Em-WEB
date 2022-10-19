@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script></script>
+	</head>
+
+	<body>
+
+		<!-- Verifica apenas o foco sobre o elemento -->
+		<input type="text" name="texto" placeholder="Digite..." 
+			onfocus="console.log('Recebeu o foco')" onblur="console.log('Perdeu o foco')"
+		>
+
+		<!-- Verifica qualquer mudança do elemento -->
+		<select onchange="console.log('Esse elemento foi modificado')" >
+			<option>-- Selecione --</option>
+			<option value="1">Primeira opção</option>
+			<option value="2">Segunda opção</option>
+		</select>
+	</body>
+</html>
