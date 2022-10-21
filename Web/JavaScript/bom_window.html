@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<title>BOM</title>
+		<script>
+
+			var janela;
+
+			function abrirJanela() {
+				janela = window.open('http://www.google.com', 'nova_janela', 'width=400, height=600')
+			}
+
+			function fecharJanela() {
+				janela.close();
+			}
+
+			function imprimirJanela() {
+				window.print();
+			}
+		</script>
+	</head>
+
+	<body>
+		<button onclick="abrirJanela()" class="btn btn-dark">Abrir Janela</button>
+		<button onclick="fecharJanela()" class="btn btn-dark">Fechar Janela</button>
+		<button onclick="imprimirJanela()" class="btn btn-dark">Imprimir Tela</button>
+	</body>
+</html>

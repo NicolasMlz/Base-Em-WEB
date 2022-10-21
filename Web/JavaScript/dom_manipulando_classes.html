@@ -13,6 +13,10 @@
 			.estilo1 {
 				width: 100px;
 				height: 40px;
+				background-color: green;
+
+				
+				transition: width 2s, height 2s, background-color 1s, font-size 2s;
 			}
 
 			.estilo2 {
@@ -26,6 +30,7 @@
 
 
 				transition: width 2s, height 2s, background-color 1s, border-radius 2s, font-size 2s;
+				trasiotion
 			}
 		</style>
 	</head>
@@ -39,7 +44,11 @@
 
 		<script>
 			function mudarClasse() {
-				document.getElementById('caixa').className = 'estilo2';
+				if(document.getElementById('caixa').className == 'estilo1') {
+					document.getElementById('caixa').className = 'estilo2';
+				} else {
+					document.getElementById('caixa').className = 'estilo1';
+				}
 			}
 		</script>
 	</body>
