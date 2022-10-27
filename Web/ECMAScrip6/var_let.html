@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Var e Let</title>
+		<script>
+			
+			//VAR: Respeita a ordem de escopos (var dentro de função não vira global, var dentro de if vira global, etc...)
+			//LET: A função se torna parte apenas do bloco de código ao qual se refere: se criada no bloco se mantém no bloco,
+				   //Se criada na função apenas na função e global se mantém global
+
+
+			//EXEMPLO DE VAR EM QUE HÁ SOBREPOSIÇÃO DE VALORES
+			var serie = 'Friends'
+			{
+				var serie = 'The Walking Dead'
+				console.log('VAR Dentro do bloco: ' + serie)
+			}
+			console.log('VAR Fora do bloco: ' + serie)
+
+
+			//EXEMPLO DE LET
+			let anime = 'Hunter x Hunter'
+			{
+				let anime = 'One Piece'
+				console.log('LET Dentro do bloco: ' + anime)
+			}
+			console.log('LET Fora do bloco: ' + anime)
+
+
+		</script>
+	</head>
+
+	<body>
+		<div id="output"></div>
+	</body>
+</html>

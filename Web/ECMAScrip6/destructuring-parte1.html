@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script>
+			
+			//Destructuring
+
+			let frutas = ['Abacaxi', 'Uva', 'Pera', 'Morango']
+
+			//let [ a, b, , c ] = frutas //pular um indice
+			let [ a, b, c, d, e = 'Banana'] = frutas
+			console.log(a, b, c, d, e)
+
+			//========================
+
+			let coisas = [['Abacaxi', 'Uva', 'Pera', 'Morango'], ['Nicolas', 'Maria']]
+			
+			let [,[,nome2]] = coisas
+			console.log(nome2)
+
+
+		</script>
+	</head>
+
+	<body>
+		<div id="output"></div>
+	</body>
+</html>

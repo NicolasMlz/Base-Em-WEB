@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script>
+			
+			//REST
+
+			function soma(...param) {
+				let resultado = 0
+
+				param.forEach(v => resultado += v)
+
+				return resultado
+			}
+			soma(3, 8, 5, 7)
+
+			function multiplicacao(m, ...p) {
+				let resultado = 0
+
+				p.forEach(v => resultado += m * v)
+
+				return resultado
+			}
+			multiplicacao(5, 7, 12, 3, 49)
+
+		</script>
+	</head>
+
+	<body>
+		<div id="output"></div>
+	</body>
+</html>

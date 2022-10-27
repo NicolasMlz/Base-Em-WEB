@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script>
+			
+			let Carro = function() {
+				this.cor = 'Amarelo'
+				this.modelo = 'Chevette'
+				this.velocidadeAtual = 0
+
+				//ENCAPSULA A VARIAVEL PARA O ESCOPO DA FUNCAO APENAS
+				var velocidadeMaxima = 180
+
+				this.acelerar = function() {
+					let velocidade = this.getVelocidadeAtual() + 50
+					if(velocidade > velocidadeMaxima) {
+						this.setVelocidadeAtual(velocidade)
+					}
+				}
+
+				this.getVelocidadeAtual = function() {
+					return this.velocidadeAtual
+				}
+
+				this.setVelocidadeAtual = function(velocidadeAtual) {
+					this.velocidadeAtual = velocidadeAtual
+				}
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<div id="output"></div>
+	</body>
+</html>
